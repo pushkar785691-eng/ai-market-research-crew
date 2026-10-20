@@ -6,6 +6,8 @@
 ![License](https://img.shields.io/badge/License-MIT-green.svg)
 ![Status](https://img.shields.io/badge/Status-Active-brightgreen.svg)
 ![Build](https://github.com/pushkar785691-eng/ai-market-research-crew/actions/workflows/ci.yml/badge.svg)
+![Citation validity](https://img.shields.io/badge/citation_validity-90%25-brightgreen.svg)
+![Section completeness](https://img.shields.io/badge/section_completeness-87%25-brightgreen.svg)
 
 > Built as a placement/portfolio project to demonstrate multi-agent orchestration, LLM tool-use, and applied GenAI system design.
 
@@ -172,6 +174,28 @@ agent pipeline, with deterministic mock mode available when no API key is config
 ```bash
 pytest tests/ -v
 ```
+
+## 📏 Reproducible Evaluation
+
+The résumé metrics are backed by checked-in, versioned evaluation data rather than hard-coded
+display values:
+
+- **90% citation validity** — 9 of 10 manually audited claim/source pairs include supporting
+  evidence and a valid source URL; the unresolved citation remains visible.
+- **87% section completeness** — 20 of 23 items in the report-quality rubric are present.
+- **Under three minutes** — the deterministic offline benchmark executes the complete agent
+  orchestration path and records the average runtime across three runs.
+
+Reproduce the results locally:
+
+```bash
+python benchmarks/run_benchmark.py --write
+pytest tests/ -v
+```
+
+See [BENCHMARKS.md](BENCHMARKS.md), [the machine-readable results](benchmarks/results.json),
+and the versioned audit inputs in [`benchmarks/`](benchmarks/). The runtime result explicitly
+excludes external model and network latency.
 
 ---
 

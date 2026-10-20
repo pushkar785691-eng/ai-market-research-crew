@@ -4,6 +4,7 @@ __pycache__/
 .venv/
 venv/
 .validation-deps/
+.benchmark-tmp-*/
 .pytest_cache/
 outputs/*_report.md
 outputs/*_report.json

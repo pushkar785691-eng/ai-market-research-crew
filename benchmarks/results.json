@@ -1,0 +1,29 @@
+{
+  "generated_at_utc": "2026-10-20T14:34:58.106916+00:00",
+  "citation_validity": {
+    "score_percent": 90.0,
+    "passed": 9,
+    "total": 10,
+    "failed_ids": [
+      10
+    ],
+    "definition": "Human-audited claim/source pairs marked supported, with evidence notes and a valid HTTPS source URL."
+  },
+  "section_completeness": {
+    "score_percent": 87.0,
+    "passed": 20,
+    "total": 23,
+    "failed_ids": [
+      21,
+      22,
+      23
+    ],
+    "definition": "Required report elements present in the checked-in sample, using a versioned 23-item rubric."
+  },
+  "runtime": {
+    "average_seconds": 0.0013,
+    "runs": 3,
+    "under_three_minutes": true,
+    "definition": "Average end-to-end orchestration runtime in deterministic offline mock mode; excludes external API and network latency."
+  }
+}
